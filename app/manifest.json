@@ -1,0 +1,18 @@
+{
+  "name": "Quote Image As Text",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Quote arbitary images as markdown text",
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "contextMenus",
+    "clipboardWrite",
+    "notifications"
+  ]
+}
