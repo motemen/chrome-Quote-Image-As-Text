@@ -1,8 +1,14 @@
+var directImageUrlPattern = /\.(?:png|jpe?g|gif)(?:\?.*?)?(?:#.*?)?$/i;
+
 chrome.contextMenus.create({
     title: 'Quote image as text',
     contexts: ['image'],
     onclick: function (info, tab) {
-        var markdown = '[![](' + info.srcUrl + ')](' + info.pageUrl + ')';
+        var pageUrl = info.pageUrl;
+        if (info.linkUrl && !directImageUrlPattern.exec(info.linkUrl)) {
+            pageUrl = info.linkUrl;
+        }
+        var markdown = '[![](' + info.srcUrl + ')](' + pageUrl + ')';
 
         document.oncopy = function (e) {
             e.clipboardData.setData('text/plain', markdown);
