@@ -16,4 +16,8 @@ In the case above generates like below:
 [![](http://upload.wikimedia.org/wikipedia/commons/3/38/JPEG_example_JPG_RIP_001.jpg)](http://en.wikipedia.org/wiki/JPEG)
 ```
 
+Which renders like:
+
+[![](http://upload.wikimedia.org/wikipedia/commons/3/38/JPEG_example_JPG_RIP_001.jpg)](http://en.wikipedia.org/wiki/JPEG)
+
 The logo image is built using [Font Awesome](http://fortawesome.github.io/) and [Markdown Mark](https://github.com/dcurtis/markdown-mark).
