@@ -5,7 +5,9 @@ chrome.contextMenus.create({
     contexts: ['image'],
     onclick: function (info, tab) {
         var pageUrl = info.pageUrl;
-        if (info.linkUrl && !directImageUrlPattern.exec(info.linkUrl)) {
+        if (info.linkUrl
+                && !directImageUrlPattern.exec(info.linkUrl)
+                && info.linkUrl !== info.srcUrl) {
             pageUrl = info.linkUrl;
         }
         var markdown = '[![](' + info.srcUrl + ')](' + pageUrl + ')';

@@ -2,7 +2,7 @@
   "name": "Quote Image As Text",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Quote arbitary images as markdown text",
+  "description": "Quote arbitary images on the web as markdown text",
   "default_locale": "en",
   "background": {
     "scripts": [
