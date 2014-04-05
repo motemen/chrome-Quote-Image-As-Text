@@ -1,0 +1,21 @@
+{
+  "name": "chrome-Quote-Image-As-Text",
+  "version": "0.0.1",
+  "description": "Quote images on the web as markdown text",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/motemen/chrome-Quote-Image-As-Text"
+  },
+  "author": "motemen <motemen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/motemen/chrome-Quote-Image-As-Text/issues"
+  },
+  "homepage": "https://github.com/motemen/chrome-Quote-Image-As-Text",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-zip": "^0.3.3",
+    "q": "^1.0.1"
+  }
+}
