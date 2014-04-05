@@ -14,5 +14,9 @@
     "contextMenus",
     "clipboardWrite",
     "notifications"
-  ]
+  ],
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  }
 }
